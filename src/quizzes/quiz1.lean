@@ -18,9 +18,9 @@ there is no such valid inference rule.
 
 If a ball, b, is round *and* b is also red, is b red?
 
-A: yes/no: 
+A: yes/no: yes
 
-B: Why? 
+B: Why? because "b == red", so be is red.
 
 
 #1B
@@ -29,50 +29,50 @@ If flowers make you happy and chocolates make you happy,
 and I give you flowers *or* I give you chocolates, will
 you be happy?
 
-A: yes/no: 
+A: yes/no: yes
 
-B: Why?
+B: Why? because "chocolates make me happy" == true.
 
 
 #1C: If giraffes are just zebras in disguise, then the 
 moon is made of green cheese?
 
-A. yes/: 
+A. yes/: no
 
-B. Why?
+B. Why? because giraffes are just zebras in disguise != the moon is made of green cheese.
 
 
 #1D. If x = y implies that 0 = 1, then is it true that
 x ≠ y?
 
-A. yes/no: 
+A. yes/no: yes
 
-B. Why?
+B. Why? because x = y impies 0=1, so x == 0 && y == 1, then x != y
 
 
 
 #1E. If every zebra has stripes and Zoe is a Zebra then
 Zoe has stripes.
 
-A. yes/no: 
+A. yes/no: no
 
-B. Why?
+B. Why? because zebra has stripes and Zoe, but they are not Zoe; Zebra contains zoe, but zebra != zoe.
 
 
 #1F. If Z could be *any* Zebra and Z has stripes, then 
 *every* Zebra has stripes.
 
-A. Yes/no: 
+A. Yes/no: no
 
-B: Why?
+B: Why? because Z is zebra and Z has stripes doesn't mean all zebra has stripes.
 
 
 #1G. If whenever the wind blows, the leaves move, and 
 the leaves are moving, then the wind is blowing.
 
-A. yes/no: 
+A. yes/no: No
 
-B. Why? 
+B. Why? because we cannot impliy the condition through results, only implying from condition (wind blows) to results (leaves move).
 
 
 #1H: If Gina is nice *or* Gina is tall, and Gina is nice,
