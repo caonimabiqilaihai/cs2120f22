@@ -79,9 +79,9 @@ B. Why? because we cannot impliy the condition through results, only implying fr
 then Gina is not tall. (The "or" here is understood to be
 the or of predicate logic.)
 
-A. yes/no: 
+A. yes/no: yes
 
-B. Why?
+B. Why? because Gina is tall is in an "or" statement, which means there is possibility that Gina is not tall.
 -/
 
 
@@ -94,7 +94,7 @@ logic: X ∨ ¬Y.
 
 #2A: Is is satisfiable? If so, give a model (a binding of 
 the variables to values that makes the expressions true).
-
+Yes, it is satisfiable when X = true and Y = true.
 
 #2B: Is it valid? Explain your answer. 
 
@@ -113,7 +113,7 @@ true if and only if Q is true) then if P is true then Q is
 true.
 -/
 
-#check _
+#check _yes. Because P is true only if Q is true, then if P is true then Q is true.
 
 
 
@@ -128,7 +128,7 @@ be ignored here.
 #check ∀ (n m : ℕ), n < m → m - n > 0
 
 /-
-Answer:
+Answer:if n and m are true only if they are nature numbers, then if n is larger then m implies that m minues n is larger than 0.
 -/
 
 -- B
@@ -136,7 +136,7 @@ Answer:
 #check ∃ (n : ℕ), ∀ (m : nat), m >= n
 
 /-
-Answer:
+Answer: if n is true for any natural number and m is true only if it is nat, then m is larger than or equals to n.
 -/
 
 
@@ -146,7 +146,7 @@ variables (isEven: ℕ → Prop) (isOdd: ℕ → Prop)
 #check ∀ (n : ℕ), isEven n ∨ isOdd n
 
 /-
-Answer:
+Answer: given if and only if n is natural number, then n is ture, then impies the expression (even natural number n or odd natural number n).
 -/
 
 
@@ -155,7 +155,7 @@ Answer:
 #check ∀ (P : Prop), P ∨ ¬P
 
 /-
-Answer:
+Answer: P is true if and only if P is prop, then impies whether P or not P.
 -/
 
 
@@ -164,7 +164,7 @@ Answer:
 #check ∀ (P : Prop), ¬(P ∧ ¬P)
 
 /-
-Answer:
+Answer: P is true if and only if P is prop, then impies the expression of "Not" expression of "P or Not P".
 -/
 
 
@@ -189,5 +189,8 @@ variable contagion :
   (hasVirus : Animal → Prop)
   (closeContact : Animal → Animal → Prop), 
   hasVirus a1 → closeContact a1 a2 → hasVirus a2
+  Both a1 and a2 are random type of animals, there once a virus that make both two animal get it if one of them already has it and they contact each
+  other very closely. One day, a1 is informed to get the virus and from the recording we know that a1 and a2 often contact very closely even during the
+  time a1 has the virus, then we know that a2 also gets the virus.
 
 
